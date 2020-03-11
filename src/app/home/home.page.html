@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Bienvenidos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <!-- <img src="../../assets/icon/logoSolo.png" /> -->
+    <ion-card-header>
+      <ion-card-title>AcceasyLearn</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Mediante esta app podrás aprender sobre los lineamientos de accesibilidad para contenidos web de la W3C (WCAG - Web Content
+      Accessibility Guidelines).
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card routerLink="/tabs/tab2">
+          <ion-card-header>
+            <ion-card-title style="text-align: center">Aprender</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <img  src="../../assets/BotonAprender.png" />
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/tabs/tab3">
+          <ion-card-header>
+            <ion-card-title style="text-align: center">Buscar</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> 
+             <img src="../../assets/BotonBuscar.png" />
+          </ion-card-content>
+        </ion-card> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</ion-content>
